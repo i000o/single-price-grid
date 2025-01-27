@@ -1,0 +1,62 @@
+@use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@mixin central-flex {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+$border-radius: 12px;
+
+body { 
+    font-family: 'karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+
+    main { 
+        @include central-flex;
+        margin: 200px;
+
+
+        section { 
+            // box shadow 
+            display: grid; 
+            grid-template-columns: 2;
+            grid-template-rows: 2;
+            max-width: 37em;
+
+
+            .top, .left, .right { 
+                padding: 30px;
+            }
+
+            .top { 
+                grid-column: 1 / span 2; 
+                grid-row: 1;
+                background-color: #FFFFFF;
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+            }
+
+            .bottom { 
+
+                .left { 
+                    background-color: hsl(179, 62%, 43%);
+                    border-bottom-left-radius: $border-radius;
+                    grid-column: 1; 
+                    grid-row: 2;
+                }
+    
+                .right { 
+                    background-color: hsl(179, 62%, 43%); 
+                    border-bottom-right-radius: $border-radius;
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+        }
+    }
+
+    footer { 
+        @include central-flex;
+        font-size: 0.8em;
+    }
+}
