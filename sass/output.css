@@ -57,6 +57,9 @@ body main section .top h3 {
   margin-right: 10px;
   line-height: 160%;
 }
+body main section .bottom {
+  width: 100%;
+}
 body main section .bottom h4 {
   color: hsl(204, 43%, 93%);
   margin: 10px 0;
@@ -129,6 +132,35 @@ body footer {
   justify-content: center;
   align-items: center;
   font-size: 0.8em;
+}
+
+@media screen and (max-width: 1015px) {
+  body main {
+    margin: 200px 100px;
+  }
+}
+@media screen and (max-width: 808px) {
+  body main {
+    margin: 200px 50px;
+  }
+}
+@media screen and (max-width: 719px) {
+  body main {
+    margin: 100px 50px;
+  }
+  body main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 30em;
+  }
+  body main section .left, body main section .right {
+    width: 100%;
+  }
+  body main section .right {
+    border-bottom-left-radius: 12px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

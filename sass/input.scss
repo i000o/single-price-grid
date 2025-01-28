@@ -15,8 +15,6 @@ body {
         @include central-flex;
         margin: 200px;
 
-
-
         section { 
             // box-shadow: 0px 0px 31px 11px #DCE8EF; I can't add this - it breaks the design. Something's wrong with my classes. 
             display: grid; 
@@ -59,6 +57,8 @@ body {
 
             .bottom { 
 
+                width: 100%;
+
                 h4 { 
                     color: hsl(204, 43%, 93%);
                     margin: 10px 0;
@@ -73,6 +73,8 @@ body {
                     border-bottom-left-radius: $border-radius;
                     grid-column: 1; 
                     grid-row: 2;
+                    // max-width: 100%;
+
 
                     .deal { 
 
@@ -121,6 +123,7 @@ body {
                     border-bottom-right-radius: $border-radius;
                     grid-column: 2;
                     grid-row: 2;
+                    // max-width: 100%;
 
                     ul { 
                         list-style: none;
@@ -145,5 +148,56 @@ body {
     footer { 
         @include central-flex;
         font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1015px) { 
+
+    body { 
+        main { 
+            margin: 200px 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 808px) { 
+
+    body { 
+        main { 
+            margin: 200px 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 719px) { 
+
+    body { 
+        main { 
+            margin: 100px 50px;
+
+            section { 
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 30em;
+
+                .left, .right { 
+                    width: 100%;
+                }
+
+                .left { 
+                    // can't remove border radius again :(
+                }
+
+                .right { 
+                    border-bottom-left-radius: $border-radius;
+
+                    ul { 
+                        // I want to make each li only one line not two. Margin is in the way - Can't remove?
+                    }
+                }
+            }
+        }
     }
 }
