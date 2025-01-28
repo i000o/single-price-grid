@@ -40,17 +40,89 @@ body main section .top {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+body main section .top .heading {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.3em;
+  margin: 20px 0;
+  font-weight: 700;
+}
+body main section .top .subheading {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.1em;
+}
+body main section .top h3 {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-right: 10px;
+  line-height: 160%;
+}
+body main section .bottom h4 {
+  color: hsl(204, 43%, 93%);
+  margin: 10px 0;
+}
+body main section .bottom .left, body main section .bottom .right {
+  padding-bottom: 20px;
+}
 body main section .bottom .left {
   background-color: hsl(179, 62%, 43%);
   border-bottom-left-radius: 12px;
   grid-column: 1;
   grid-row: 2;
 }
+body main section .bottom .left .deal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: hsla(204, 43%, 93%, 0.8);
+  font-weight: 400;
+  margin: -35px 0 -50px 0;
+}
+body main section .bottom .left .deal .price {
+  color: hsl(204, 43%, 93%);
+  font-size: 2em;
+  margin-right: 10px;
+}
+body main section .bottom .left .deal .month {
+  font-weight: 400;
+}
+body main section .bottom .left p {
+  font-size: 0.95em;
+  color: hsl(204, 43%, 93%);
+}
+body main section .bottom .left button {
+  font-size: 0.9em;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  padding: 10px 85px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: solid hsl(71, 73%, 54%);
+  box-shadow: 0px 0px 22px 5px #309390;
+}
+body main section .bottom .left button:hover {
+  cursor: pointer;
+}
 body main section .bottom .right {
-  background-color: hsl(179, 62%, 43%);
+  background-color: hsl(179, 45%, 50%);
   border-bottom-right-radius: 12px;
   grid-column: 2;
   grid-row: 2;
+}
+body main section .bottom .right ul {
+  list-style: none;
+  margin: 0;
+  margin-left: 0;
+  line-height: 120%;
+  padding-left: 0;
+  margin-right: 75px;
+  opacity: 80%;
+}
+body main section .bottom .right ul li {
+  font-size: 0.8em;
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
 }
 body footer {
   display: flex;

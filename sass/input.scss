@@ -16,8 +16,9 @@ body {
         margin: 200px;
 
 
+
         section { 
-            // box shadow 
+            // box-shadow: 0px 0px 31px 11px #DCE8EF; I can't add this - it breaks the design. Something's wrong with my classes. 
             display: grid; 
             grid-template-columns: 2;
             grid-template-rows: 2;
@@ -34,22 +35,108 @@ body {
                 background-color: #FFFFFF;
                 border-top-left-radius: $border-radius;
                 border-top-right-radius: $border-radius;
+
+                .heading { 
+                    color: hsl(179, 62%, 43%);
+                    font-size: 1.3em;
+                    margin: 20px 0;
+                    font-weight: 700;
+                }
+
+                .subheading { 
+                    color: hsl(71, 73%, 54%);
+                    font-size: 1.1em;
+                }
+
+                h3 { 
+                    color: hsl(218, 22%, 67%);
+                    font-size: 0.9em;
+                    font-weight: 400;
+                    margin-right: 10px;
+                    line-height: 160%;
+                }
             }
 
             .bottom { 
+
+                h4 { 
+                    color: hsl(204, 43%, 93%);
+                    margin: 10px 0;
+                }
+
+                .left, .right { 
+                    padding-bottom: 20px;
+                }
 
                 .left { 
                     background-color: hsl(179, 62%, 43%);
                     border-bottom-left-radius: $border-radius;
                     grid-column: 1; 
                     grid-row: 2;
+
+                    .deal { 
+
+                        display: flex; 
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: hsl(204, 43%, 93%, 80%);
+                        font-weight: 400;
+                        margin: -35px 0 -50px 0;
+
+                        .price { 
+                            color: hsl(204, 43%, 93%);
+                            font-size: 2em;
+                            margin-right: 10px;
+                        }
+
+                        .month { 
+                            font-weight: 400;
+                        }
+                    }
+
+                    p { 
+                        font-size: 0.95em;
+                        color: hsl(204, 43%, 93%);
+                    }
+
+                    button { 
+                        font-size: 0.9em;
+                        font-weight: 700;
+                        background-color: hsl(71, 73%, 54%);
+                        color:hsl(204, 43%, 93%);
+                        padding: 10px 85px;
+                        border-radius: 8px;
+                        margin: 10px 0;
+                        border: solid  hsl(71, 73%, 54%);
+                        box-shadow: 0px 0px 22px 5px #309390;
+                    }
+
+                    button:hover { 
+                        cursor: pointer;
+                    }
                 }
     
                 .right { 
-                    background-color: hsl(179, 62%, 43%); 
+                    background-color: hsl(179, 45%, 50%); 
                     border-bottom-right-radius: $border-radius;
                     grid-column: 2;
                     grid-row: 2;
+
+                    ul { 
+                        list-style: none;
+                        margin: 0;
+                        margin-left: 0;
+                        line-height: 120%;
+                        padding-left: 0;
+                        margin-right: 75px;
+                        opacity: 80%;
+
+                        li {
+                            font-size: 0.8em;
+                            color: hsl(204, 43%, 93%);
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
         }
