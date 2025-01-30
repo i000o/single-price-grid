@@ -53,7 +53,7 @@ Here, I'm going to try and finish this one quickly, as it looks simple enough. T
 I got some great feedback from another developer about specificity and the impact of nesting. They note that the reason I couldn't achieve a change in `border-radius` for mobile was due to the specificity I had used. They recommended targeting classes rather than HTML elements so that I didn't have long lists of multiple selectors and could instead, individually target declarations. I knew I wasn't using the concept of classes in CSS to their full potential or purpose, but I wasn't sure how. I understand this better now and want to implement this practice into a habit in future.  
 I wasn't aware either of the impact of nesting in the CSS. I overlooked it in the instance, thinking that more nesting meant more organised code, but actually I was digging my declarations into deeper hole, in a way making them unnecessarily less accessible to the browser. I want to keep this in mind as it is tempting to be able to collapse code down when I work, but I need to be mindful of the way it translates to my `output.css` file (which I probably don't look over enough).
 
-![](/images/single-price-feedback.png)
+![](./images/single-price-feedback.png)
 
 ## Lessons
 
